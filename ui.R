@@ -1,3 +1,10 @@
+# Install / Load relevant packages
+library(shiny)
+library(rvest)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(DT)
 
 shinyUI(fluidPage(
   
