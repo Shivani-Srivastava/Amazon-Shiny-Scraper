@@ -31,7 +31,23 @@ shinyUI(fluidPage(
     # value argument is important in the tabPanle()
     tabsetPanel(
       tabPanel("Overview", value=1, 
-               includeMarkdown("overview.md")
+               h3('Overview'),
+
+              p('Amazon scraper app helps you to download reviews of listed product on any Amazon site.'),
+
+              h3('How to use this App'),
+p('- Go to amazon site of your choice for ex. amazon.com, amazon.co.uk, amazon.in etc.'),br(),
+
+p('- Go to product page as shown below and click on ratings'),br(),
+
+  
+
+p('- Scroll down to bottom and click on see all reviews'),br(),
+
+  p('- Now, copy URL (base URL) from browser and paste it to sidebar panel'),br(),
+
+  p('- Select number of pages (restricted to Max. 5) to scrape and click scrape'),br(),
+p('Note: Please ensure number of pages you selected on app are available on amazon.')
       ),
       tabPanel("Scraped Data", value=1,
                h5("Scraped Data Summary"),
